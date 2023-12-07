@@ -12,7 +12,6 @@ nav {
   font-size: large;
   word-spacing: 20pt;
   text-align: center;
-  background-color: lavender;
   display: flex;
   align-items: center;
   border-bottom: 2px solid;
@@ -34,6 +33,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .image-container {
   position: relative;
@@ -111,16 +111,34 @@ td {
 }
 
 button {
-  width: 100%; /* Hesapla butonunun genişliğini ayarla */
-  padding: 10px; /* Hesapla butonu içeriğinden kenara boşluk bırakma */
-  margin-left: 100%;
-  background-color: rgb(248, 153, 169);
+  margin-left: 80%; /* Sayfanın sağ kenarına göre hizala */
+  width: 70%;
+  padding: 10px;
+  background-color: rgb(255, 175, 222);
   color: white; /* Beyaz renkte metin */
-  border: none; /* Kenarlık olmasın */
+  border: 2px solid #e892ce;
   border-radius: 5px; /* Kenar köşelerini yuvarla */
   cursor: pointer; /* Üzerine gelindiğinde işaretçiyi değiştirme */
+  display: block; /* Button'ı blok öğe olarak görüntüle */
+  margin-top: 20px; /* İstediğiniz boşluğu ekleyin */
 }
 
 button:hover {
   background-color: #e892ce;
+}
+.blog {
+  background: black;
+  color: white;
+  padding: 10px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+#sonuc {
+  margin-left: 80%; /* Sayfanın sağ kenarına göre hizala */
+  width: 70%;
+  font-size: large;
+  color: black;
+  background-color: lavender;
+  text-align: center;
 }

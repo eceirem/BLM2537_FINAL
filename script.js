@@ -25,48 +25,77 @@ function calculateBMI() {
   var bmi = kilo / (boy * boy);
   var bmi_sonuc;
   if (19 <= yas && yas <= 24) {
-    if (19 <= bmi && bmi <= 24) {
-      bmi_sonuc = "Normal";
-    } else if (bmi < 19) {
+    if (bmi < 19) {
       bmi_sonuc = "Zayıf";
-    } else {
-      bmi_sonuc = "Obez";
+    } else if (19 <= bmi && bmi <= 24) {
+      bmi_sonuc = "Normal";
+    } else if (24 < bmi && bmi <= 30) {
+      bmi_sonuc = "Fazla kilolu";
+    } else if (30 < bmi && bmi <= 35) {
+      bmi_sonuc = "OBEZ (1. dereceden obez)";
+    } else if (35 < bmi && bmi <= 40) {
+      bmi_sonuc = "AŞIRI OBEZ (2. dereceden obez)";
+    } else if (bmi <= 40) {
+      bmi_sonuc = "MORBİD OBEZ (3. dereceden obez)";
     }
-  }
-  if (25 <= yas && yas <= 34) {
-    if (19 <= bmi && bmi <= 24) {
-      bmi_sonuc = "Normal";
-    } else if (bmi < 19) {
+  } else if (25 <= yas && yas <= 34) {
+    if (bmi < 20) {
       bmi_sonuc = "Zayıf";
-    } else {
-      bmi_sonuc = "Obez";
+    } else if (20 <= bmi && bmi <= 25) {
+      bmi_sonuc = "Normal";
+    } else if (25 < bmi && bmi <= 30) {
+      bmi_sonuc = "Fazla kilolu";
+    } else if (30 < bmi && bmi <= 35) {
+      bmi_sonuc = "OBEZ (1. dereceden obez)";
+    } else if (35 < bmi && bmi <= 40) {
+      bmi_sonuc = "AŞIRI OBEZ (2. dereceden obez)";
+    } else if (bmi <= 40) {
+      bmi_sonuc = "MORBİD OBEZ (3. dereceden obez)";
     }
   }
   if (45 <= yas && yas <= 54) {
-    if (19 <= bmi && bmi <= 24) {
-      bmi_sonuc = "Normal";
-    } else if (bmi < 19) {
+    if (bmi < 22) {
       bmi_sonuc = "Zayıf";
-    } else {
-      bmi_sonuc = "Obez";
+    } else if (22 <= bmi && bmi <= 27) {
+      bmi_sonuc = "Normal";
+    } else if (27 < bmi && bmi <= 32) {
+      bmi_sonuc = "Fazla kilolu";
+    } else if (32 < bmi && bmi <= 37) {
+      bmi_sonuc = "OBEZ (1. dereceden obez)";
+    } else if (37 < bmi && bmi <= 42) {
+      bmi_sonuc = "AŞIRI OBEZ (2. dereceden obez)";
+    } else if (bmi <= 42) {
+      bmi_sonuc = "MORBİD OBEZ (3. dereceden obez)";
     }
   }
   if (55 <= yas && yas <= 64) {
-    if (19 <= bmi && bmi <= 24) {
-      bmi_sonuc = "Normal";
-    } else if (bmi < 19) {
+    if (bmi < 23) {
       bmi_sonuc = "Zayıf";
-    } else {
-      bmi_sonuc = "Obez";
+    } else if (23 <= bmi && bmi <= 28) {
+      bmi_sonuc = "Normal";
+    } else if (28 < bmi && bmi <= 33) {
+      bmi_sonuc = "Fazla kilolu";
+    } else if (33 < bmi && bmi <= 38) {
+      bmi_sonuc = "OBEZ (1. dereceden obez)";
+    } else if (38 < bmi && bmi <= 43) {
+      bmi_sonuc = "AŞIRI OBEZ (2. dereceden obez)";
+    } else if (bmi <= 43) {
+      bmi_sonuc = "MORBİD OBEZ (3. dereceden obez)";
     }
   }
   if (65 <= yas) {
-    if (19 <= bmi && bmi <= 24) {
-      bmi_sonuc = "Normal";
-    } else if (bmi < 19) {
+    if (bmi < 24) {
       bmi_sonuc = "Zayıf";
-    } else {
-      bmi_sonuc = "Obez";
+    } else if (24 <= bmi && bmi <= 29) {
+      bmi_sonuc = "Normal";
+    } else if (29 < bmi && bmi <= 34) {
+      bmi_sonuc = "Fazla kilolu";
+    } else if (34 < bmi && bmi <= 39) {
+      bmi_sonuc = "OBEZ (1. dereceden obez)";
+    } else if (35 < bmi && bmi <= 39.9) {
+      bmi_sonuc = "AŞIRI OBEZ (2. dereceden obez)";
+    } else if (bmi <= 40) {
+      bmi_sonuc = "MORBİD OBEZ (3. dereceden obez)";
     }
   }
   document.getElementById("sonuc").innerHTML =

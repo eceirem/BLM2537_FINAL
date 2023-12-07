@@ -16,21 +16,23 @@
         </div>
       </nav>
     </div>
-    <div class="banner-container" style="background-color: gray">
-      <img src="images/beden_kitle.png" alt="" />
+    <div class="banner-container" style="background-color: lavender">
+      <img src="images/beden_kitle.png" alt="beden_kitle" />
     </div>
+      <h1 class="blog">Beden Kitle İndeksi Hesaplama Aracı</h1>
     <div>
+      <br><br>
         <table>
           <tr>
-            <td>Yaşınız</td>
+            <td>Yaşınızı Giriniz</td>
             <td><input type="text" class="inputs" id="yas"/></td>
           </tr>
           <tr>
-            <td>Boyunuz(cm)</td>
+            <td>Boyunuzu(cm) Giriniz</td>
             <td><input type="text" class="inputs" id="boy"/></td>
           </tr>
           <tr>
-            <td>Kilonuz(kg)</td>
+            <td>Kilonuzu(kg) Giriniz</td>
             <td><input type="text" class="inputs" id="kilo" /></td>
           </tr>
           <tr>
@@ -38,18 +40,19 @@
             <td>Kadın <input style="margin-right: 30px;" type="radio" name ="gender">
             Erkek <input type="radio" name="gender">                    
             </td>
-            </tr>
-            <tr>
-                <td>
-                    <button onclick="calculateBMI()">Hesapla</button>
-                </td>   
-            <tr>
-                <td>
-                    <br>
-                    <p id="sonuc" style="font-size: medium; text-align: center; color: red;"></p>
-                </td>          
-            </tr>
-            </tr>   
+          </tr>
+          <tr>
+            <td>
+              <button onclick="calculateBMI()">Hesapla</button>
+            </td>   
+          </tr>  
+          <tr>
+             <td>
+                <br>
+                  <p id="sonuc"></p>
+              </td>          
+          </tr>
+             
             
         </table>
     </div>
