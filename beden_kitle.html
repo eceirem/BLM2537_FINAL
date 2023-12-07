@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beden Kitle İndeksi Hesaplama</title>
+    <link rel="stylesheet" href="style.css" />
+  <body>
+    <div>
+      <img src="images/1.png" alt="logo" class="logo" />
+      <nav>
+        <div>
+          <a href="#" class="links">Sağlık</a>
+          <a href="#" class="links">Spor</a>
+          <a href="#" class="links">İletişim</a>
+        </div>
+      </nav>
+    </div>
+    <div class="banner-container" style="background-color: gray">
+      <img src="images/beden_kitle.png" alt="" />
+    </div>
+    <div>
+        <table>
+          <tr>
+            <td>Yaşınız</td>
+            <td><input type="text" class="inputs" id="yas"/></td>
+          </tr>
+          <tr>
+            <td>Boyunuz(cm)</td>
+            <td><input type="text" class="inputs" id="boy"/></td>
+          </tr>
+          <tr>
+            <td>Kilonuz(kg)</td>
+            <td><input type="text" class="inputs" id="kilo" /></td>
+          </tr>
+          <tr>
+            <td> Cinsiyet</td>
+            <td>Kadın <input style="margin-right: 30px;" type="radio" name ="gender">
+            Erkek <input type="radio" name="gender">                    
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="calculateBMI()">Hesapla</button>
+                </td>   
+            <tr>
+                <td>
+                    <br>
+                    <p id="sonuc" style="font-size: medium; text-align: center; color: red;"></p>
+                </td>          
+            </tr>
+            </tr>   
+            
+        </table>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>

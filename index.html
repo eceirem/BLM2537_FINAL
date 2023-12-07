@@ -4,112 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Coach</title>
-    <style>
-      * {
-        margin: 0;
-        font-family: Georgia, "Times New Roman", Times, serif;
-      }
-      nav {
-        padding: 30px;
-        font-size: large;
-        word-spacing: 20pt;
-        text-align: center;
-        background-color: lavender;
-        display: flex;
-        align-items: center;
-        border-bottom: 2px solid;
-      }
-      nav a {
-        color: grey;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-      div img {
-        margin: 0 auto;
-        height: 10%;
-        width: 10%;
-        display: block;
-      }
-      .image-container {
-        position: relative;
-        display: inline-block;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-color: rgba(220, 182, 249, 0.5);
-        transition: opacity 0.3s ease;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .info-container {
-        display: grid;
-        margin-left: 10%;
-        width: 20%;
-        word-wrap: break-word; /* Gerekirse kelime kırma */
-      }
-      .info-container p {
-        padding: 15px;
-        border: 1px solid;
-        border-radius: 10px;
-      }
-      #myImage {
-        width: 600px; /* Yeni genişlik değeri */
-        height: 500px; /* Yeni yükseklik değeri */
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <div>
-        <img src="images/1.png" alt="logo" />
-        <nav>
-          <div>
-            <a href="#">Sağlık</a>
-            <a href="#">Spor</a>
-            <a href="#">İletişim</a>
-          </div>
-        </nav>
+    <div>
+      <img src="images/1.png" alt="logo" class="logo" />
+      <nav>
+        <div>
+          <a href="#" class="links">Sağlık</a>
+          <a href="#" class="links">Spor</a>
+          <a href="#" class="links">İletişim</a>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="banner-container"
+      onmouseover="showOverlay()"
+      onmouseout="hideOverlay()"
+      onclick="changeImage()"
+    >
+      <div class="image-container">
+        <img id="myImage" src="images/banner.png" alt="Image" />
+        <div class="overlay"></div>
       </div>
-      <div
-        class="image-container"
-        onmouseover="showOverlay()"
-        onmouseout="hideOverlay()"
-        onclick="changeImage()"
-      >
-        <img id="myImage" src="images/banner.png" alt="First Image" />
-        <div id="overlay" class="overlay"></div>
-      </div>
+    </div>
 
-      <script>
-        var currentImageIndex = 0;
-        var images = ["images/banner.png", "images/banner2.png"];
-
-        function showOverlay() {
-          document.getElementById("overlay").style.opacity = "1";
-        }
-
-        function hideOverlay() {
-          document.getElementById("overlay").style.opacity = "0";
-        }
-
-        function changeImage() {
-          currentImageIndex = (currentImageIndex + 1) % images.length;
-          var img = document.getElementById("myImage");
-          img.src = images[currentImageIndex];
-        }
-      </script>
-    </header>
     <br />
     <br />
     <br />
@@ -117,11 +37,33 @@
       <h2>Sağlık Nedir?</h2>
       <br />
       <p>
-        Besinlerin koruyucu ve iyileştirici gücü bilimsel olarak kanıtlanmış bir
-        gerçek. Diyet yaparken pratik tarifler, fit kalmaya yardımcı bilgiler ve
-        kişisel özelliklerinize göre beslenme programı NE YEMELİ bölümünde
-        sizleri bekliyor.
+        Sağlık hem fiziksel hem de psikolojik açıdan iyi ola hâlidir. Fiziksel
+        olarak iyi olmak için bazı diyetler uygulanabilir. İstediğiniz kiloda
+        olsanız bile sağlıklı yaşamak için sağlıklı beslenme felsefesini
+        benimsemimiz gerekir.<b>"Ne yerseniz o olursunuz."</b> Bu deyişi
+        unutmadan yaşarsak mutlu ve sağlıklı bir hayatımız olabilir. Besinlerin
+        koruyucu ve iyileştirici gücü bilimsel olarak kanıtlanmış bir gerçek.
+        Diyet yaparken pratik tarifler, fit kalmaya yardımcı bilgiler ve kişisel
+        özelliklerinize göre beslenme programı NE YEMELİ bölümünde sizleri
+        bekliyor.
+        <br />
+        Bu bölümleri okumadan önce ölçümlerinize bakıp bilgilenebilirsiniz.
+        Sizlerin bilgilenmesi için hazırladığımız
+        <b>Önce Ölçün Sonra Düşünün</b> kısmından gerekli değerleri elde
+        edebilirsiniz.
       </p>
+      <br />
+    </div>
+    <div class="measure-cards">
+      <a href="bmr.html" class="measure-card" target="_blank">
+        <img src="images/bazal_metabolizma.png" alt="bazal_metabolizma" />
+        <h1>Bazal Metabolizma Hızı Hesaplama</h1>
+      </a>
+      <a href="beden_kitle.html" class="measure-card" target="_blank">
+        <img src="images/beden_kitle.png" alt="beden_kitle" />
+        <h1>Beden Kitle İndeksi Hesaplama</h1>
+      </a>
     </div>
   </body>
 </html>
+<script src="script.js"></script>
