@@ -111,7 +111,7 @@ td {
 }
 
 button {
-  margin-left: 80%; /* Sayfanın sağ kenarına göre hizala */
+  margin-left: 80%;
   width: 70%;
   padding: 10px;
   background-color: rgb(255, 175, 222);
@@ -119,8 +119,6 @@ button {
   border: 2px solid #e892ce;
   border-radius: 5px; /* Kenar köşelerini yuvarla */
   cursor: pointer; /* Üzerine gelindiğinde işaretçiyi değiştirme */
-  display: block; /* Button'ı blok öğe olarak görüntüle */
-  margin-top: 20px; /* İstediğiniz boşluğu ekleyin */
 }
 
 button:hover {
@@ -136,7 +134,7 @@ button:hover {
 }
 
 #sonuc {
-  margin-left: 80%; /* Sayfanın sağ kenarına göre hizala */
+  margin: auto; /* Sayfanın sağ kenarına göre hizala */
   width: 70%;
   font-size: larger;
   color: black;

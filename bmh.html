@@ -39,8 +39,9 @@
           </tr>
           <tr>
             <td> Cinsiyet</td>
-            <td>Kadın <input style="margin-right: 30px;" type="radio" name ="gender">
-            Erkek <input type="radio" name="gender">                    
+            <td>
+              Kadın  <input type="radio" name="gender" id="radio" value="female"> 
+              Erkek  <input type="radio" name="gender" id="male" value="male">              
             </td>
           </tr>
           <tr>
@@ -48,15 +49,8 @@
               <button onclick="calculateBMH()">Hesapla</button>
             </td>   
           </tr>  
-          <tr>
-             <td>
-                <br>
-                  <p id="sonuc"></p>
-              </td>          
-          </tr>
-             
-            
         </table>
+        <p id="sonuc"></p>
     </div>
   </body>
 </html>
