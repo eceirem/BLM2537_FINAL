@@ -132,12 +132,13 @@ button:hover {
   padding: 10px;
   letter-spacing: 0.2em;
   text-align: center;
+  font-size: large;
 }
 
 #sonuc {
   margin-left: 80%; /* Sayfanın sağ kenarına göre hizala */
   width: 70%;
-  font-size: large;
+  font-size: larger;
   color: black;
   background-color: lavender;
   text-align: center;

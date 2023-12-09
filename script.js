@@ -101,3 +101,12 @@ function calculateBMI() {
   document.getElementById("sonuc").innerHTML =
     bmi_sonuc.toString() + " " + bmi.toFixed(2).toString();
 }
+
+function calculateBMI() {
+  var yas = Number(document.getElementById("yas").value);
+  var boy = Number(document.getElementById("boy").value / 100);
+  var kilo = Number(document.getElementById("kilo").value);
+  var cinsiyet = document.getElementsById("cinsiyet").toString();
+  var bmh_woman = 655.1 + 9.56 * kilo + 1.85 * boy - 4.68 * yas;
+  var bmh_man = 66.5 + (13, 75 * kilo) + 5.03 * boy - 6.75 * yas;
+}

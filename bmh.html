@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beden Kitle İndeksi Hesaplama</title>
+    <title>Bazal Metabolizma Hızı Hesaplama</title>
     <link rel="stylesheet" href="style.css" />
   <body>
     <div>
@@ -19,9 +19,9 @@
       </nav>
     </div>
     <div class="banner-container" style="background-color: lavender">
-      <img src="images/beden_kitle.png" alt="beden_kitle" />
+      <img src="images/bazal_metabolizma.png" alt="beden_kitle" />
     </div>
-      <h1 class="blog">Beden Kitle İndeksi Hesaplama Aracı</h1>
+      <h1 class="blog">Bazal Metabolizma Hızı Hesaplama Aracı</h1>
     <div>
       <br><br>
         <table>
@@ -39,14 +39,13 @@
           </tr>
           <tr>
             <td> Cinsiyet</td>
-            <td>
-              <input type="radio" name="gender" id="female" value="female"> Kadın
-              <input type="radio" name="gender" id="male" value="male"> Erkek                                
+            <td>Kadın <input style="margin-right: 30px;" type="radio" name ="gender">
+            Erkek <input type="radio" name="gender">                    
             </td>
           </tr>
           <tr>
             <td>
-              <button onclick="calculateBMI()">Hesapla</button>
+              <button onclick="calculateBMH()">Hesapla</button>
             </td>   
           </tr>  
           <tr>
