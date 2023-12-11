@@ -110,29 +110,21 @@ function calculateBMH() {
   var bmh_woman = 655.1 + 9.56 * kilo + 1.85 * boy - 4.68 * yas;
   var bmh_man = 66.5 + 13.75 * kilo + 5.03 * boy - 6.75 * yas;
   var bmh_sonuc;
-  var bmh;
-
-  if (
-    Radio &&
-    Radio.value === "female" &&
-    1000 < bmh_woman &&
-    bmh_woman < 1400
-  ) {
+  var bmh = 0;
+  if (Radio.value === "female" && 1000 < bmh_woman && bmh_woman < 1400) {
     bmh = bmh_woman;
     bmh_sonuc = "ideal bazal metabolizma hızı";
-  } else if (
-    Radio &&
-    Radio.value === "male" &&
-    1200 < bmh_man &&
-    bmh_man < 1600
-  ) {
+  } else if (Radio.value === "male" && 1200 < bmh_man && bmh_man < 1600) {
     bmh = bmh_man;
     bmh_sonuc = "ideal bazal metabolizma hızı";
   } else {
     bmh_sonuc =
       "ideal bazal metabolizma hızı aralığında değilsiniz. Doktora danışınız!";
   }
-
-  document.getElementById("sonuc").innerHTML =
-    bmh_sonuc.toString() + " " + bmh.toFixed(2).toString();
+  if (bmh != 0) {
+    document.getElementById("sonuc").innerHTML =
+      bmh_sonuc.toString() + " " + bmh.toFixed(2).toString() + " kcal";
+  } else {
+    document.getElementById("sonuc").innerHTML = bmh_sonuc.toString();
+  }
 }
