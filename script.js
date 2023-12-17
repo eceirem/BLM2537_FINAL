@@ -14,8 +14,6 @@ function changeImage() {
   currentImageIndex = (currentImageIndex + 1) % images.length;
   var img = document.getElementById("myImage");
   img.src = images[currentImageIndex];
-  // Overlay'i gizle
-  hideOverlay();
 }
 
 function calculateBMI() {
