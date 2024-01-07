@@ -206,3 +206,9 @@ footer {
   padding: 20px;
   width: 30%;
 }
+.news-cards-img {
+  max-width: 200px;
+  border: gray 2px solid;
+  border-radius: 8px;
+  display: block;
+}

@@ -1,5 +1,11 @@
 var currentImageIndex = 0;
-var images = ["images/banner.png", "images/banner2.png"];
+var images = [
+  "images/banner.png",
+  "images/banner2.png",
+  "images/banner3.jpeg",
+  "images/banner4.png",
+  "images/banner5.jpg",
+];
 function showOverlay() {
   var overlay = document.querySelector(".overlay");
   overlay.style.opacity = "1";
@@ -125,4 +131,26 @@ function calculateBMH() {
   } else {
     document.getElementById("sonuc").innerHTML = bmh_sonuc.toString();
   }
+}
+
+function contactButton() {
+  alert(
+    "Bilgileriniz alınmıştır. En yakın sürede sizlerle iletişime geçilecektir."
+  );
+}
+
+function contactButtonReset() {
+  document.getElementById("form").reset();
+}
+function openNewPage1() {
+  window.open(
+    "other_pages/harvardli-bilim-insani-enerji-ve-saglik-icin-nelerden-kacindigini-6-maddeyle-anlatti.html",
+    "_blank"
+  );
+}
+function openNewPage2() {
+  window.open("other_pages/anne-sutu-bebegin-ilk-asisidir.html", "_blank");
+}
+function openNewPage3() {
+  window.open("other_pages/yuz-yil-yasayabilir-miyiz.html", "_blank");
 }
