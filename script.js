@@ -5,6 +5,7 @@ var images = [
   "images/banner3.jpeg",
   "images/banner4.png",
   "images/banner5.jpg",
+  "images/banner6.jpg",
 ];
 function showOverlay() {
   var overlay = document.querySelector(".overlay");
@@ -16,11 +17,24 @@ function hideOverlay() {
   overlay.style.opacity = "0";
 }
 
+function randomBanner() {
+  currentImageIndex = Math.floor(Math.random() * images.length);
+  var img = document.getElementById("myImage");
+  img.src = images[currentImageIndex];
+}
+
 function changeImage() {
   currentImageIndex = (currentImageIndex + 1) % images.length;
   var img = document.getElementById("myImage");
   img.src = images[currentImageIndex];
 }
+
+window.onload = function () {
+  randomBanner(); // Sayfa yüklendiğinde ilk olarak random banner'ı göstermeli sonra değiştirmeli sırasıyla
+  setInterval(function () {
+    changeImage();
+  }, 3000);
+};
 
 function calculateBMI() {
   var yas = Number(document.getElementById("yas").value);

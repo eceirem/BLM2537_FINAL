@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Coach</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    .hizalama-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* İçeriklerin üst taraftan hizalanması */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .info-container {
+      margin-right: 20px;
+      width: 50%;
+    }
+    .reading-cards {
+      margin-top: 300px;
+      display: block;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+    }
+    .reading-card {
+      width: 100%;
+      margin-bottom: 50px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      overflow: hidden;
+      transition: background-color 0.3s;
+    }
+    .reading-card:hover {
+      background-color: rgb(182, 181, 181);
+    }
+  </style>
+  <body>
+    <div>
+      <a href="../index.html"
+        ><img src="../images/1.png" alt="logo" class="logo"
+      /></a>
+      <nav>
+        <div>
+          <a href="../index.html" class="links">Anasayfa</a>
+          <a href="saglik.html" class="links">Sağlık</a>
+          <a href="spor.html" class="links">Spor</a>
+          <a href="iletisim.html" class="links">İletişim</a>
+        </div>
+      </nav>
+    </div>
+    <div class="hizalama-container">
+      <div class="info-container">
+        <img
+          style="max-width: 100%"
+          src="../images/tarif2.png"
+          alt="fit-cookie"
+        />
+        <br />
+        <h2>Malzemeler</h2>
+        <br />
+        <p>
+          1 kahve fincanı tam buğday ya da yulaf unu
+          <br />
+          1 kahve fincanı şekersiz fıstık ezmesi
+          <br />
+          1/3 kahve fincanı agave şurubu ya da pekmez
+          <br />
+          Yarım paket kabartma tozu ya da vanilya
+          <br />
+          70-80 g vegan bitter çikolata
+          <br />
+        </p>
+        <p>
+          <br />
+          <h2>Yapılışı</h2>
+          <br />
+          Un, fıstık ezmesi, pekmez (ya da agave şurubu) ve kabartma tozunu bir
+          kaseye alıp, hamur haline gelene kadar elinizle yoğurun.
+          <br />
+          Hamurdan istediğiniz boyutlarda kurabiyeler yapın. Dilerseniz içine,
+          dilerseniz üzerine çikolata parçaları ilave edin.
+          <br />
+          Kurabiyeleri bir tepsiye dizdikten sonra 160 derecede ısıtılmış
+          fırında 12-13 dakika pişirin. Afiyet Olsun.
+        </p>
+        <br />
+        <p>Sağlıklı günler dilerim! Sevgi ve lezzetle kalın.<br /></p>
+      </div>
+      <div class="info-container">
+        <div class="reading-cards">
+          <a href="fit-pizza.html" class="reading-card" target="_blank"
+            ><img src="../images/tarif1.jpg" alt="fit-pizza" />Fit Pizza
+            Tarifi</a
+          >
+          <a href="detoks-suyu.html" class="reading-card" target="_blank"
+            ><img src="../images/tarif3.jpg" alt="detoks-suyu" />Detoks Suyu
+            Tarifi</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <br /><br /><br />
+  <hr style="border: 1px black solid" />
+  <footer>
+    <p>Ece Life© 2023 Copyright. All Rights reserved.</p>
+  </footer>
+</html>
