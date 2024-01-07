@@ -152,19 +152,25 @@ function contactButton() {
     "Bilgileriniz alınmıştır. En yakın sürede sizlerle iletişime geçilecektir."
   );
 }
-
 function contactButtonReset() {
   document.getElementById("form").reset();
 }
-function openNewPage1() {
-  window.open(
-    "other_pages/harvardli-bilim-insani-enerji-ve-saglik-icin-nelerden-kacindigini-6-maddeyle-anlatti.html",
-    "_blank"
-  );
-}
-function openNewPage2() {
-  window.open("other_pages/anne-sutu-bebegin-ilk-asisidir.html", "_blank");
-}
-function openNewPage3() {
-  window.open("other_pages/yuz-yil-yasayabilir-miyiz.html", "_blank");
+
+function suggestExercise() {
+  // Kullanıcının girdiği değerleri aldım
+  const age = parseInt(document.getElementById("age").value);
+  const bmi = parseFloat(document.getElementById("bmi").value);
+  const hasSurgery = document.getElementById("surgery").checked;
+
+  // Egzersiz önerisi atring içerisinde olacak youtube linkleri koyacağım
+  let exerciseSuggestion = "";
+
+  if (age >= 50 || bmi > 28 || hasSurgery) {
+    exerciseSuggestion = "https://youtu.be/DYuw4f1c4xs?si=8GL01u-Ya3He-mrn";
+  } else if (!hasSurgery && bmi > 23) {
+    exerciseSuggestion = "https://youtu.be/1vRto-2MMZo?si=j96QVW6KJ07zMVMp";
+  } else if (!hasSurgery && bmi <= 23) {
+    exerciseSuggestion = "https://youtu.be/zETooQn2jps?si=12SQ4sjbZGwYc23X";
+  }
+  window.open(exerciseSuggestion, "_blank");
 }
