@@ -78,7 +78,7 @@ Her sayfada logo, navigasyon barı ve footer bulunmaktadır. Logo üzerine tıkl
 ![Anasayfa](images/1.png)
 
 ### Sağlık Sayfası
-![Sağlık Sayfası](screenshots/saglik.png)
+![Sağlık Sayfası](images/İdeal-Kilo-Herkesin-Hayali-Peki-Nasıl-Hesaplanmalı.jpg)
 
 ### Spor Sayfası
 ![Spor Sayfası](images/spor-nedir.jpg)
