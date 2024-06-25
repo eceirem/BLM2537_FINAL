@@ -84,7 +84,7 @@ Her sayfada logo, navigasyon barı ve footer bulunmaktadır. Logo üzerine tıkl
 ![Spor Sayfası](images/spor-nedir.jpg)
 
 ### İletişim Sayfası
-![İletişim Sayfası](screenshots/iletisim.png)
+![İletişim Sayfası](images/banner4.png)
 
 ---
 
