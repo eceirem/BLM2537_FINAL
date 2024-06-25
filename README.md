@@ -81,7 +81,7 @@ Her sayfada logo, navigasyon barı ve footer bulunmaktadır. Logo üzerine tıkl
 ![Sağlık Sayfası](screenshots/saglik.png)
 
 ### Spor Sayfası
-![Spor Sayfası](screenshots/spor.png)
+![Spor Sayfası](images/spor-nedir.jpg)
 
 ### İletişim Sayfası
 ![İletişim Sayfası](screenshots/iletisim.png)
