@@ -75,7 +75,7 @@ Her sayfada logo, navigasyon barı ve footer bulunmaktadır. Logo üzerine tıkl
 ## Ekran Görüntüleri
 
 ### Anasayfa
-![Anasayfa](screenshots/anasayfa.png)
+![Anasayfa](images/1.png)
 
 ### Sağlık Sayfası
 ![Sağlık Sayfası](screenshots/saglik.png)
